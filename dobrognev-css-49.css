@@ -1,0 +1,399 @@
+@font-face {
+    font-family: Open Sans;
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+    font-weight: 700;
+    font-style: normal;
+ }
+ @font-face {
+    font-family: Opem Sans;
+    src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+ }
+ body {
+    margin: 0px;
+ }
+ ul {
+    padding-left: 0px;
+    list-style-type: none;
+ }
+ ::placeholder {
+    font-size: 14px;
+    line-height: 18px;
+    color: grey;
+    font-family: "Open Sans";
+    font-weight: 500;
+ }
+ 
+ .header {
+    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg);
+    height: 450px;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+ }
+ .header::after {
+    content: "";
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.6;
+    z-index: 1;
+ }
+ .header-box {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .header-top {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    height: 90px;
+    padding-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .header-logo {
+    display: block;
+    position: relative;
+    height: 45px;
+    width: 185px;
+    padding-left: 15px;
+    z-index: 2;
+ }
+ .menu {
+    position: relative;
+    z-index: 2;
+ }
+ .menu-list {
+    display: flex;
+    justify-content: flex-end;
+ }
+ .href-none {
+    text-decoration: none;
+ }
+ .menu-list-item .href-none {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 300;
+ }
+ .menu-list-item:nth-child(n + 2) {
+    padding-left: 30px;
+ }
+ .header-title .href-none {
+    display: block;
+    position: relative;
+    max-width: 735px;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 45px;
+    line-height: 75px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 700;
+    z-index: 2;
+ }
+ .main-box {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 65px;
+    margin-bottom: 65px;
+ }
+ .left-section-posts {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 110px;
+ }
+ .left-post-box {
+    max-width: 780px;
+    display: flex;
+    padding-left: 15px;
+ }
+ .left-post-box:nth-child(n + 2) {
+    margin-top: 55px;
+ }
+ .left-posts {
+    margin-left: 30px;
+ }
+ .article-categories {
+    margin-top: 0px;
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0px;
+ }
+ .categories .href-none {
+    padding-right: 15px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #b59f5b;
+    font-family: "Open Sans";
+    font-weight: 700;
+    text-transform: uppercase;
+ }
+ h2 {
+    margin-top: 2px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0f0d0e;
+    font-family: "Open Sans";
+    font-weight: 700;
+ }
+ .date-author {
+    display: flex;
+    margin-bottom: 50px;
+ }
+ .date {
+    font-size: 12px;
+    line-height: 14px;
+    color: #888888;
+    font-family: "Open Sans";
+    font-weight: 400;
+    padding-right: 10px;
+ }
+ .author {
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    font-family: "Open Sans";
+    font-weight: 700;
+ }
+ .p-post {
+    font-size: 15px;
+    color: #0f0d0e;
+    font-family: "Open Sans";
+    font-weight: 400;
+ }
+ .right-aside-box {
+    position: relative;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 270px;
+ }
+ .name-box {
+    display: block;
+    text-align: center;
+ }
+ .name-box::after {
+    content: "";
+    display: block;
+    line-height: 3px;
+    width: 60px;
+    height: 3px;
+    background-color: #b59f5b;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+ }
+ h3 {
+    margin-top: 0px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #0f0d0e;
+    font-family: "Open Sans";
+    font-weight: 700;
+    text-transform: uppercase;
+ }
+ .right-section-post {
+    margin-bottom: 50px;
+ }
+ .right-post {
+    display: flex;
+    justify-content: flex-start;
+    min-height: 70px;
+    max-width: 270px;
+ }
+ .right-post:nth-child(n + 2) {
+    margin-top: 25px;
+ }
+ h4 {
+    margin-top: 2px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #0f0d0e;
+    font-family: "Open Sans";
+    font-weight: 700;
+    text-transform: uppercase;
+ }
+ .right-article {
+    padding-left: 15px;
+ }
+ .search-form {
+    position: relative;
+    display: flex;
+ }
+ .input-search {
+    box-sizing: border-box;
+    border: none;
+    width: 220px;
+    height: 50px;
+    background-color: #f4f7f6;
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 18px;
+    color: grey;
+    font-family: "Open Sans";
+    font-weight: 500;
+ }
+ .search-button {
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    width: 50px;
+    height: 50px;
+    background-color: #b59f5b;
+ }
+ .search-icon {
+    width: 20px;
+    height: 20px;
+ }
+ .subscribe-section {
+    margin-top: 50px;
+ }
+ .input-email {
+    box-sizing: border-box;
+    border: none;
+    width: 270px;
+    height: 50px;
+    background-color: #f4f7f6;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    font-size: 14px;
+    line-height: 18px;
+    color: grey;
+    font-family: "Open Sans";
+    font-weight: 500;
+ }
+ .submit-button {
+    box-sizing: border-box;
+    display: block;
+    border: none;
+    position: relative;
+    width: 270px;
+    height: 50px;
+    background-color: #b59f5b;
+    color: #ffffff;
+ }
+ .subscribe {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 700;
+ }
+ .tags-section {
+    max-width: 275px;
+    margin-top: 50px;
+ }
+ .tags-flex {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .tags-title .href-none {
+    display: block;
+    border: 3px solid #eeeeee;
+    font-size: 12px;
+    line-height: 15px;
+    color: #0f0d0e;
+    font-family: "Open Sans";
+    font-weight: 700;
+    padding: 5px 10px;
+    margin-bottom: 8px;
+    margin-right: 5px;
+    text-transform: uppercase;
+ }
+ .class-section {
+    margin-top: 50px;
+    width: 270px;
+ }
+ .class-flex {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+ }
+ .class-title {
+    position: relative;
+ }
+ .class-title .href-none {
+    display: block;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    font-family: "Open Sans";
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    text-transform: capitalize;
+ }
+ .class-int {
+    position: absolute;
+    padding-left: 3px;
+    top: -5px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #b59f5b;
+    font-family: "Open Sans";
+    font-weight: 700;
+    text-transform: uppercase;
+ }
+ 
+ .footer {
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .social-box {
+    width: 1170px;
+    height: 85px;
+    background-color: #f4f7f6;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .social-icon {
+    width: 35px;
+    height: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+ }
+ .copyright-box {
+    width: 1170px;
+    height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .copyright-title .href-none {
+    font-size: 12px;
+    line-height: 40px;
+    color: #999999;
+    font-family: "Open Sans";
+    font-weight: 700;
+ }
